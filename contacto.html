@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Canon Cámaras</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+     <img src="logo.png" 
+        alt="Logo de El Mundo de la Fotografía" 
+        width="80">
+    <h1>El Mundo De La Fotografía</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Modelos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas sobre algún modelo de cámara Canon? Escríbenos.</p>
+
+    <form class="tarjeta-formulario">
+
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="asunto">Asunto o categoría</label>
+      <select id="asunto" name="asunto">
+        <option value="compra">Consulta de compra</option>
+        <option value="soporte">Soporte técnico</option>
+        <option value="sugerencia">Sugerencia</option>
+      </select>
+
+      <fieldset>
+        <legend>Tipo de cámara de interés</legend>
+
+        <input type="radio" id="pref-mirrorless" name="preferencia" value="mirrorless">
+        <label for="pref-mirrorless">Mirrorless (EOS R)</label>
+
+        <input type="radio" id="pref-reflex" name="preferencia" value="reflex">
+        <label for="pref-reflex">Réflex (EOS DSLR)</label>
+
+      </fieldset>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+      <button type="submit">Enviar</button>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Canon Cámaras</p>
+  </footer>
+
+</body>
+</html>
